@@ -5,6 +5,67 @@
 }
 
 body {
+  background-color: rgb(205, 220, 224);
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+}
+
+.add {
+  background-color: rgb(128, 185, 223);
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.note {
+  background-color: white;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.note .tools {
+  background-color: rgb(128, 185, 223);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.1rem;
+}
+
+.note .main {
+  background-color: rgb(245, 245, 245);
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+}
+
+.note textarea {
+  background-color: rgb(245, 245, 245);
+  outline: none;
+  /* resize: none; */
+  font-family: inherit;
+  font-size: 1.2rem;
+  height: 400px;
+  width: 100%;
+  border: none;
+}
+
+.note .hidden {
+ display: none;
 }
